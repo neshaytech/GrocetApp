@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <!-- Image of the vegetable -->
+    <ImageView
+        android:id="@+id/vegetable_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="centerCrop"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="Vegetable Image"/>
+
+    <!-- Name, Price, and Quantity -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <!-- Vegetable Name -->
+        <TextView
+            android:id="@+id/vegetable_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vegetable Name"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingBottom="4dp"/>
+
+        <!-- Vegetable Price -->
+        <TextView
+            android:id="@+id/vegetable_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price: $0.00"
+            android:textSize="16sp"
+            android:paddingBottom="4dp"/>
+
+        <!-- Vegetable Quantity -->
+        <TextView
+            android:id="@+id/vegetable_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quantity: 0"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <!-- Add to Cart Button -->
+    <Button
+        android:id="@+id/add_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:background="@color/main"
+        android:textColor="@android:color/white"/>
+</LinearLayout>
